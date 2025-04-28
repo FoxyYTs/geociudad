@@ -27,8 +27,8 @@
 	# Generate our .war.
 	mvn install
 	# Move generated WAR into your Tomcat webapps directory
-	# (/usr/share/tomcat9/webapps/ in my case)
-	mv ./target/ss*.war /usr/share/tomcat9/webapps/
+	# (/usr/share/tomcat10/webapps/ in my case)
+	mv ./target/ss*.war /usr/share/tomcat10/webapps/
 	```
 1) Restore necessary __database__ with _Liquibase_:
 	```bash
@@ -37,7 +37,7 @@
 1) Run your _Tomcat_ with the _.war_.
 	```bash
 	# The next is just my case
-	/usr/share/tomcat9/bin/startup.sh
+	/usr/share/tomcat10/bin/startup.sh
 	```
 1) Set the __back-end__ URL-address for our __front-end__:
 	```bash
